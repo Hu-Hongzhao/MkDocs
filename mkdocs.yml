@@ -6,28 +6,34 @@ repo_name: Website/Hongzhao
 # Website layout configuration (using mkdocs-material theme)
 theme:
   name: material
+  extra_css:
+    - css/extra.css
   palette:
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: white
-    accent: blue
-    toggle:
-      icon: material/lightbulb
-      name: Switch to dark mode
-  - media: "(prefers-color-scheme: dark)"
-    scheme: slate
-    primary: grey
-    accent: light blue
-    toggle:
-      icon: material/lightbulb-outline
-      name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
     alternate: material/web
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
-  - Overview: index.md
-  - NoteBook: notebook.md
+  - Overview.md
+  - NoteBook:
+    - Github:
+      - Github\Github.md
+    - Markdown:
+      - Markdown\Markdown.md
 
   
