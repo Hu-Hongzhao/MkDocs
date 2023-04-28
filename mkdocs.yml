@@ -6,26 +6,30 @@ repo_name: Website/Hongzhao
 # Website layout configuration (using mkdocs-material theme)
 theme:
   name: material
-  extra_css:
-    - css/extra.css
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: white
-      accent: blue
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
         name: Switch to dark mode
+
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: grey
-      accent: light blue
       toggle:
-        icon: material/lightbulb-outline
-        name: Switch to light mode
-  icon:
-    repo: fontawesome/brands/github
-    alternate: material/web
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra_css:
+  - css/extra.css
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
@@ -39,4 +43,5 @@ nav:
     - STM32:
       - STM32\STM32.md
 
-  
+
+
