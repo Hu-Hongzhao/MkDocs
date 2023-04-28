@@ -28,9 +28,6 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-extra_css:
-  - css/extra.css
-
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
   - SmartHome:
