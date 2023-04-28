@@ -29,7 +29,8 @@ theme:
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
-  - Overview.md
+  - SmartHome:
+    - Overview.md
   - NoteBook:
     - Github:
       - Github\repository.md
