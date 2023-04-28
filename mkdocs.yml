@@ -36,5 +36,7 @@ nav:
       - Github\repository.md
     - Markdown:
       - Markdown\Markdown.md
+    - STM32:
+      - STM32\STM32.md
 
   
