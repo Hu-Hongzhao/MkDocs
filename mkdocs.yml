@@ -30,6 +30,7 @@ theme:
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
+  - Home: index.md
   - SmartHome:
     - Overview.md
   - NoteBook:
