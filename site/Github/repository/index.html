@@ -19,7 +19,7 @@
     
     
       
-        <title>Github - My Website</title>
+        <title>仓库管理 - My Website</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#github" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Github
+              仓库管理
             
           </span>
         </div>
@@ -241,10 +241,44 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          SmartHome
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          SmartHome
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../Overview/" class="md-nav__link">
-        Overview
+        OverView
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -325,12 +359,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Github
+          仓库管理
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Github
+        仓库管理
       </a>
       
         
@@ -349,8 +383,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    仓库管理
+  <a href="#_2" class="md-nav__link">
+    创建仓库步骤
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sshgithubvs-code" class="md-nav__link">
+    SSH连接到GitHub，VS Code同步代码
   </a>
   
 </li>
@@ -419,6 +460,54 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          STM32
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          STM32
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STM32/STM32/" class="md-nav__link">
+        STM32
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -452,8 +541,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    仓库管理
+  <a href="#_2" class="md-nav__link">
+    创建仓库步骤
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sshgithubvs-code" class="md-nav__link">
+    SSH连接到GitHub，VS Code同步代码
   </a>
   
 </li>
@@ -476,8 +572,28 @@
   
 
 
-<h1 id="github">Github</h1>
-<h2 id="_1">仓库管理</h2>
+<h1 id="_1">仓库管理</h1>
+<h2 id="_2">创建仓库步骤</h2>
+<ol>
+<li>进入本地仓库文件夹，使用 Git Bash 输入指令初始化 Git 代码库
+   <code>git init</code></li>
+<li>将文件夹中的所有文件和文件夹添加到 Git 仓库
+   <code>git add --all
+   或
+   git add .</code></li>
+<li>创建带有消息 first commit 的新提交，并将更改保存到代码库中
+   <code>git commit -m "first commit"</code></li>
+<li>将默认分支从 master 重命名为 main
+   <code>git branch -M main</code></li>
+<li>添加一个名为 origin 的新远程代码库，将本地仓库与 Github 上创建的仓库关联起来，origin 是一个约定俗成的远程代码库名称，通常用于指代代码库的主要远程源
+   <code>git remote add origin &lt;Github 仓库 URL&gt;</code></li>
+<li>将更改推送到Github上的远程“main”分支，将本地的 main 分支与远程的 main 分支关联起来
+   <code>git push -u origin main</code></li>
+</ol>
+<h2 id="sshgithubvs-code">SSH连接到GitHub，VS Code同步代码</h2>
+<ol>
+<li></li>
+</ol>
 
 
 
