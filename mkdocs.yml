@@ -33,13 +33,14 @@ nav:
   - Home: index.md
   - SmartHome:
     - Overview.md
+    - WiFi6:
+      - SmartHome\WiFi6\WiFi6.md
+    - PLC网络:
+      - SmartHome\PLC网络\PLC网络.md
   - NoteBook:
     - Github:
-      - Github\repository.md
+      - NoteBook\Github\repository.md
     - Markdown:
-      - Markdown\Markdown.md
+      - NoteBook\Markdown\Markdown.md
     - STM32:
-      - STM32\STM32.md
-
-
-
+      - NoteBook\STM32\STM32.md
